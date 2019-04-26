@@ -1,0 +1,99 @@
+.section-container-recipies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.small-list-recipies {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    .small-list-recipies-item {
+        padding: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-transform: capitalize;
+        font-family: $normal-font;
+        font-size: 12px;
+        }
+}
+.hard {
+    font-weight: 900;
+}
+.recipie-img {
+    border-radius: 50px;
+    margin-left: 20px;   
+}
+@media (max-width: 746px) {
+    .small-list-recipies{
+        justify-content: center;
+    }
+    .recipie-img {
+        margin-left: 0px;
+    }
+}
+
+.info-recipie-container {
+    margin-left: 47px;
+    width: 91%;
+    .tittle-recipie {
+        font-family: $normal-font;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-left: 39px;
+    }
+    .recipie-description{
+        font-family: $normal-font;
+        text-transform: capitalize;
+        color: $submenu-color;
+        font-size: 12px;
+    }
+    .cita-container-recipie {  
+        border-left: 1px solid $logo-color;  
+       
+        blockquote {
+           font-family: $normal-font;
+           font-size: 12px;
+           margin-top: 26px;
+        span {
+            text-transform: uppercase;
+            color: $submenu-color;
+            
+            }
+        }
+    }
+    .img-info-recipies {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+       
+        .subtittle-recipie{
+            font-family: $normal-font;
+            font-size: 10px;
+            text-transform: capitalize;
+            color: $submenu-color;
+        }
+    }
+}
+.ingredients-list{
+    font-family: $normal-font;
+    font-size: 13px;
+    color: $logo-color;
+    padding: 0;
+    margin-top: 30px;
+    padding-left: 13px;
+    span {
+        color: $submenu-color;
+    }
+}
+
+.link-recipies {
+    text-decoration: none;
+    color: $submenu-color;
+}
+.header-sublist-item:hover, .link-recipies:hover {
+    color: $logo-color;
+}

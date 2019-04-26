@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: $submenu-color;
+    font-size: 12px;
+    .footer-font {
+    font-family: $normal-font;
+    padding-left: 7px;
+
+    }
+}
+@media (max-width: 746px) {
+    .footer-font{
+        visibility: hidden;
+    }
+}
+@media (max-width: 746px) {
+    footer {
+        font-size: 20px;
+        width: 100%;
+        .icon-footer {
+            width: 20px;
+            height: 20px;
+            padding: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

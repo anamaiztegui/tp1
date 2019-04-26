@@ -1,0 +1,103 @@
+
+.image-container-recipies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .icon-container-recipies{
+        position: relative;
+        top: 78px;
+        .icon-recipies-one{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        background-color: rgb(35, 31, 255);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon-recipies-two{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        background-color: rgb(0, 119, 231);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon-recipies-three{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        background-color: rgb(255, 72, 40);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon-recipies-four{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        background-color: rgb(112, 64, 19);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon-recipies-five{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        background-color: rgb(243, 0, 0);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    }   
+}
+@media (max-width: 746px) {
+    .image-container-recipies{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .icon-container-recipies{
+    
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    .recipie-img {
+        width: 100%;
+    }
+}
+
+.subtittle-icons-recipie-container{
+    color: $submenu-color;
+    font-size: 12px;
+    span {
+    margin-right: 8px;
+    margin-left: 3px;
+    }
+    
+}

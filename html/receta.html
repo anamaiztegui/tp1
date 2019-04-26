@@ -3,86 +3,175 @@
 
 <head>
     <title>Receta</title>
+
+    <!--caracteres-->
     <meta charset="utf-8" />
+
+    <!--link a estilos-->
     <link rel="stylesheet" type="text/css" href="../styles/css/main.css">
+
+     <!--link a fuentes-->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+
+     <!--link a iconos-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="page-container">
-        <div>
 
+
+<body>
+
+    <!--Contenedor pagina-->
+    <div class="page-recipies-container">
+
+            <!--Comienza header-->
             <header>
-                <div>
-                    <h1>mi blog de cocina</h1>
-                    <nav>
-                        <ul>
-                            <li class="receta-list-item">home</li>
-                            <li class="receta-list-item">platos</li>
-                            <li class="receta-list-item">sobre mi</li>
-                            <li class="receta-list-item">contacto</li>
-                        </ul>
-                    </nav>
+                <div class="header-container">
+
+                    <!--comienza titulo de pagina-->
+                    <h1 class="page-tittle">mi blog de cocina</h1>
+                    <!--termina titulo de pagina-->
+
+                    <!--comienza menu de navegacion-->
+                    <div class="nav-container">
+                        <nav>
+                            <ul class="header-list">
+                                <li class="header-list-item first-header-item"><a class="home-list-item" href="index.html">home</a></li>
+                                <li class="header-list-item second-header-item">platos
+
+                                    <!-- comienza submenu-->
+                                    <ul class="header-sublist">
+                                        <li class="header-sublist-item"><a class="link-recipies" href="receta.html">ensalada</a></li>
+                                        <li class="header-sublist-item">carne</li>
+                                        <li class="header-sublist-item">helado</li>
+                                    </ul>
+                                     <!-- termina submenu-->
+                                </li>
+                                <li class="header-list-item">sobre mi</li>
+                                <li class="header-list-item">contacto</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--termina menu de navegacion-->
+
                 </div>
             </header>
+            <!--termina header-->
 
-            <div>
+            <!--Comienza banner-->
+            <div class="banner">
                 <img src="../img/banner.jpg" alt="banner receta" />
             </div>
-        </div>
+            <!--termina banner-->
 
-        <div>
-            <div>
-                <ul>
-                    <li>home</li>
-                    <li>archivo</li>
-                    <li>single post blog</li>
+
+        <!--comienza columna de pagina-->
+        <div class="big-column-recipies-container">
+
+            <!--comienza lista chica-->
+            <div class="small-list-recipies-container">
+                <ul class="small-list-recipies">
+                    <li class="small-list-recipies-item"><i class="fas fa-home"> <span class="small-list-recipies-item">home ></span></i></li>
+                    <li class="small-list-recipies-item"><span class="hard">archivo ></span></li>
+                    <li class="small-list-recipies-item">single post blog</li>
                 </ul>
             </div>
-            <section>
-                <div>
-                    <div></div>
-                    <img src="../img/recetas.JPG" alt="foto receta" />
-                </div>
-                <div>
-                    <h5>by maria | may 19 2017</h5>
-                    <div>
-                    <i class="far fa-heart">20</i>
-                    <i class="far fa-comment">10</i>
-                    <i class="fas fa-share-alt"></i>
+            <!--termina lista chica-->
+
+            <!--comienza seccion central-->
+            <section class="first-section-recipies">
+                <div class="section-container-recipies">
+                <!--comienza contenedor de imagen-->
+                <div class="image-container-recipies">
+
+                    <!--comienza contenedor de iconos-->
+                    <div class="icon-container-recipies">
+                        <div class="icon-recipies-one"><i class="fab fa-facebook-f"></i></div>
+                        <div class="icon-recipies-two"><i class="fab fa-twitter"></i></div>
+                        <div class="icon-recipies-three"><i class="fab fa-google-plus-g"></i></div>
+                        <div class="icon-recipies-four"><i class="fab fa-instagram"></i></div>
+                        <div class="icon-recipies-five"><i class="fab fa-pinterest-p"></i></div>
                     </div>
+                    <!--termina contenedor de iconos-->
+                    
+                    <!--comienza imagen de receta-->
+                    <img class="recipie-img" src="../img/recetas.JPG" alt="foto receta" />
+                    <!--termina imagen de receta-->
+                    
                 </div>
-                <p>muy sencillo, económico y rápido, sirve para rellenar con ingredientes
-                    dulces o salados. Aquí va la receta bien caserita,como lo hacía mi
-                    abuela. </p>
-                <blockquote>
-                    "la cocina es algo que viene de generación en generación, desde
-                    nuestros ancestros hasta ahora en nuestra actualidad. muchas 
-                    recetas tradicionales"
-                    <span>elena remoto</span>
-                </blockquote>
-                <ul>
-                    <li>2 cebolla morada</li>
-                    <li>6 champignones</li>
-                    <li>4 cdas de pan rallado</li>
-                    <li>1 atado de perejil</li>
-                    <li>2 chiles jalapeños</li>
-                    <li>1 paquete de queso dambo en fetas</li>
-                </ul>
+                <!--termina contenedor de imagen-->
+
+                <!--comienza seccion de titulos, texto, receta e info-->
+                <div class="info-recipie-container">
+
+                    <!--comienza pie de foto-->
+                    <div class="img-info-recipies">
+                        <h5 class="subtittle-recipie">by maria | may 19 2017</h5>
+                        
+                        <div class="subtittle-icons-recipie-container">
+                            <i class="far fa-heart"><span>20</span></i>
+                            <i class="far fa-comment"><span>10</span></i>
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                    </div>
+                    <!--termina pie de foto-->
+
+                    <h1 class="tittle-recipie hard">pionono salado</h1>
+
+                    <!--comienza descripcion de la receta-->
+                    <p class="recipie-description">muy sencillo, económico y rápido, sirve para rellenar con
+                        ingredientes
+                        dulces o salados. Aquí va la receta bien caserita,como lo hacía mi
+                        abuela. </p>
+                     <!--termina descripcion de la receta-->
+
+                    <!--comienza cita-->
+                    <div class="cita-container-recipie">
+                    <blockquote class="hard">
+                        "la cocina es algo que viene de generación en generación, desde
+                        nuestros ancestros hasta ahora en nuestra actualidad. muchas
+                        recetas tradicionales" 
+                        <br/><br/><span>elena remoto</span>
+                    </blockquote>
+                    </div>
+                    <!--termina cita-->
+
+                    <!--comienza lista de ingredientes-->
+                    <ul class="ingredients-list">
+                        <li><span>2 cebolla morada</span></li>
+                        <li><span>6 champignones</span></li>
+                        <li><span>4 cdas de pan rallado</span></li>
+                        <li><span>1 atado de perejil</span></li>
+                        <li><span>2 chiles jalapeños</span></li>
+                        <li><span>1 paquete de queso dambo en fetas</span></li>
+                    </ul>
+                    <!--termina lista de ingredientes-->
+
+                </div>
+                <!--termina seccion de titulos, texto, receta e info-->
+                </div>
             </section>
+            <!--termina seccion central-->
+
+            <!--comienza el footer-->
+            <footer>
+                <i class="fab fa-facebook-f icon-footer"><span class="footer-font">facebook</span></i>
+                <i class="fab fa-twitter icon-footer"><span class="footer-font">twitter</span></i>
+                <i class="fab fa-google-plus-g icon-footer"><span class="footer-font">google +</span></i>
+                <i class="fab fa-linkedin icon-footer"><span class="footer-font">linkedin</span></i>
+                <i class="fab fa-instagram icon-footer"><span class="footer-font">instagram</span></i>
+                <i class="fab fa-youtube icon-footer"><span class="footer-font">youtube</span></i>
+            </footer>
+            <!--termina el footer-->
+
         </div>
-         <div>
-             <i class="fab fa-facebook-f">facebook</i>
-             <i class="fab fa-twitter">twitter</i>
-             <i class="fab fa-google-plus-g">google +</i>
-             <i class="fab fa-linkedin">linkedin</i>
-             <i class="fab fa-instagram">instagram</i>
-             <i class="fab fa-youtube">youtube</i>
-        </div>
+        <!--termina columna de pagina-->
+
     </div>
+    <!--termina el contenedor general de pagina-->
+
 </body>
 
 </html>

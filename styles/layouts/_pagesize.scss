@@ -1,0 +1,25 @@
+.page-recipies-container {
+    width: 100%;
+    margin: 0 auto;
+}
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+.big-column-recipies-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.first-section-recipies {
+    width: 58%;
+    margin: 0 auto;
+}
+@media (max-width: 746px){
+    .big-column-recipies-container{
+        width: 100%;
+
+    }
+    .first-section-recipies{
+        width: 100%;
+    }
+}
