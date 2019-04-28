@@ -5,7 +5,10 @@
     justify-content: space-between;
     .icon-container-recipies{
         position: relative;
-        top: 78px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         .icon-recipies-one{
         font-size: 20px;
         text-align: center;
@@ -77,16 +80,15 @@
     .image-container-recipies{
         margin-top: 0px;
         flex-direction: column;
-    }
-    .icon-container-recipies{
+        .icon-container-recipies {
+            flex-direction: row;
+            justify-content: space-around;
+            padding-left: 40px;
+            padding-right: 40px;
     
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-left: 40px;
-        padding-right: 40px;
-
+        }
     }
+ 
     .recipie-img {
         width: 100%;
     }

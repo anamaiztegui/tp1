@@ -5,6 +5,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    .header-mobile-sublist {
+        position: relative;
+        visibility: hidden;
+     
+    }
+
     .header-list {
         .header-list-item{
             padding-bottom: 10px;
@@ -21,12 +27,13 @@
         .page-tittle {
             font-size: 50px;
             text-align: center;
+            margin: 10px;
         }
     }
 
     @media (max-width: 746px) {
         .page-tittle {
-            font-size: 70px;
+            font-size: 60px;
             text-align: center;
         }
     }
@@ -90,3 +97,93 @@
     }
 }
 
+.header-mobile-list {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media (max-width: 746px) {
+    .header-mobile-list {
+        visibility: visible;
+        height: 40px;
+        border-radius: 30px;
+        background-color: $logo-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .header-mobile-list-item {
+            list-style: none;
+            color: white;
+            font-family: $normal-font;
+            text-transform: uppercase;
+            position: absolute;
+            visibility: visible;  
+            top: 10px;  
+            height: 20px;
+        .fas, .fa-bars {
+            padding-right: 40px;
+        }
+       
+        }
+        
+    }
+    .header-list {
+        visibility: hidden;
+        position: absolute;
+       
+    }
+}
+.header-mobile-sublist{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .header-mobile-sublist-item {
+        position: relative;
+    }
+}
+    @media (max-width: 746px) {
+    
+    .header-mobile-list:hover {
+        cursor: pointer;
+        font-weight: 900;
+       
+    }
+    .header-mobile-list:hover .header-mobile-list-item {
+        top: 10px;
+    }
+    .header-mobile-list:hover .header-mobile-sublist {
+        visibility: visible;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        top: 10px;
+        font-weight: 400;
+       
+        list-style: none;
+        color: white;
+        font-family: $normal-font;
+        background-color: whitesmoke;
+        color: $submenu-color;
+        text-transform: capitalize;
+        font-size: 15px;
+
+
+    }
+    .header-mobile-sublist-item:hover {
+        color: $logo-color;
+    }
+    .header-mobile-sublist-item {
+        padding: 5px;
+        .home-list-item {
+            text-decoration: none;
+            color: $submenu-color;
+        }
+        .home-list-item:hover{
+            color: $logo-color;
+            cursor: pointer;
+        }
+    }
+}

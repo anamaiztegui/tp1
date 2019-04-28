@@ -11,6 +11,10 @@
   align-items: center;
   flex-direction: column;
 }
+.header-container .header-mobile-sublist {
+  position: relative;
+  visibility: hidden;
+}
 .header-container .header-list .header-list-item {
   padding-bottom: 10px;
 }
@@ -23,11 +27,12 @@
   .header-container .page-tittle {
     font-size: 50px;
     text-align: center;
+    margin: 10px;
   }
 }
 @media (max-width: 746px) {
   .header-container .page-tittle {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
   }
 }
@@ -88,6 +93,93 @@
   width: 100%;
 }
 
+.header-mobile-list {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 746px) {
+  .header-mobile-list {
+    visibility: visible;
+    height: 40px;
+    border-radius: 30px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .header-mobile-list .header-mobile-list-item {
+    list-style: none;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    position: absolute;
+    visibility: visible;
+    top: 10px;
+    height: 20px;
+  }
+  .header-mobile-list .header-mobile-list-item .fas, .header-mobile-list .header-mobile-list-item .fa-bars {
+    padding-right: 40px;
+  }
+
+  .header-list {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+.header-mobile-sublist {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.header-mobile-sublist .header-mobile-sublist-item {
+  position: relative;
+}
+
+@media (max-width: 746px) {
+  .header-mobile-list:hover {
+    cursor: pointer;
+    font-weight: 900;
+  }
+
+  .header-mobile-list:hover .header-mobile-list-item {
+    top: 10px;
+  }
+
+  .header-mobile-list:hover .header-mobile-sublist {
+    visibility: visible;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    top: 10px;
+    font-weight: 400;
+    list-style: none;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    background-color: whitesmoke;
+    color: grey;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+
+  .header-mobile-sublist-item:hover {
+    color: red;
+  }
+
+  .header-mobile-sublist-item {
+    padding: 5px;
+  }
+  .header-mobile-sublist-item .home-list-item {
+    text-decoration: none;
+    color: grey;
+  }
+  .header-mobile-sublist-item .home-list-item:hover {
+    color: red;
+    cursor: pointer;
+  }
+}
 /*estructura centrada*/
 .page-recipies-container {
   width: 100%;
@@ -115,6 +207,10 @@
   }
 
   .first-section-recipies {
+    width: 100%;
+  }
+
+  .nav-container {
     width: 100%;
   }
 }
@@ -187,6 +283,7 @@
 .info-recipie-container .cita-container-recipie blockquote span {
   text-transform: uppercase;
   color: grey;
+  font-weight: 400;
 }
 .info-recipie-container .img-info-recipies {
   display: flex;
@@ -263,7 +360,9 @@ footer .footer-font {
 }
 .image-container-recipies .icon-container-recipies {
   position: relative;
-  top: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .image-container-recipies .icon-container-recipies .icon-recipies-one {
   font-size: 20px;
@@ -336,9 +435,7 @@ footer .footer-font {
     margin-top: 0px;
     flex-direction: column;
   }
-
-  .icon-container-recipies {
-    display: flex;
+  .image-container-recipies .icon-container-recipies {
     flex-direction: row;
     justify-content: space-around;
     padding-left: 40px;
