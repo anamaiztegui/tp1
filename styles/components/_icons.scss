@@ -3,6 +3,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    /*    
+    ***********************************
+        COMENTARIO:
+        Los iconos tienen muchos estilos que se repiten y que podrian compartir con una clase.
+        Por ejemplo, podrian declarar icon-recipies que tenga width, height, border-radius, etc,
+        y darle lo único que cambia (el color) a cada ícono en particular
+    ***********************************
+    */
+
     .icon-container-recipies{
         position: relative;
         display: flex;
